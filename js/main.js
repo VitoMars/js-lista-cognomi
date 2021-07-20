@@ -14,3 +14,7 @@ cognome = cognome.charAt(0).toUpperCase() + cognome.slice(1);
 arrayCognomi.push(cognome);
 
 console.log(arrayCognomi.sort());
+console.log(
+  "Il valore da te inserito si trova in posizione " +
+    (arrayCognomi.indexOf(cognome) + 1)
+);
