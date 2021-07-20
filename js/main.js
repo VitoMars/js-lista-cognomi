@@ -9,12 +9,12 @@ var arrayCognomi = ["Bianchi", "Neri", "Rossi", "Verdi", "Gialli"];
 var cognome = prompt("Inserisci il cognome:");
 
 // Istruzione per mettere la prima lettera maiuscola
-cognome = cognome.charAt(0).toUpperCase() + cognome.slice(1);
+cognome = cognome.charAt(0).toUpperCase() + cognome.slice(1).toLowerCase();
 
 arrayCognomi.push(cognome);
 
 console.log(arrayCognomi.sort());
 console.log(
-  "Il valore da te inserito si trova in posizione " +
+  "Il cognome da te inserito si trova in posizione " +
     (arrayCognomi.indexOf(cognome) + 1)
 );
